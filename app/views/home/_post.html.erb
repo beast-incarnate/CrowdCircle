@@ -1,0 +1,11 @@
+<div class = "container">
+	<% if post %>
+	<h3><%= post.content %></h3>
+	<% if post.image.present? %>
+	<%= image_tag post.image.url(:medium) , class: "materialboxed" %>
+	<% end %>
+	<br>
+		<%= link_to "Comment" , url_for(controller: :home , action: :comment_remote , post_id: post.id) , method: :post , remote: true %>
+	<% end %>
+	
+</div>

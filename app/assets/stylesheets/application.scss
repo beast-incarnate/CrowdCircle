@@ -1,0 +1,142 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "materialize";
+@import "materialize/extras/nouislider";
+@import "font-awesome";
+
+.slider{
+	height:600px;
+}
+.image1{
+	height:600px;
+}
+
+body{
+	background-color:#fff;
+}
+
+#brand-logo1{
+    font-family: Amaranth;
+	margin-left:24%;
+	font-size:35px;
+}
+#nav-wrapper1{
+	background-color:#00bfa5;
+	display: relative;
+}
+.nav{
+	display:flex;
+	flex-direction:column;
+}
+footer{
+	width:100%;
+	height:40px;
+	background-color:white;
+}
+.foot{
+	display:flex;
+	justify-content:space-around;
+}
+.foot p{
+	color: grey;
+	font-size:12px;
+}
+.img img{
+	border-radius:100%;
+}
+.facebook a{
+	background-color:#3c5a99;
+}
+.facebook{
+	margin-left:115px;
+}
+
+.google{
+	margin-right:70px;
+}
+.google a{
+	background-color:#df4a32;
+}
+.heading{
+	margin-top:70px;
+}
+#upperheading{
+    margin-left:70px;
+	margin-top:60px;
+}
+.heading p{
+    margin-top: 0px;
+    margin-bottom:0px;
+    padding: 0px;
+	font-size:50px;
+	color:#fff;
+}
+#p1{
+    margin-left:150px;
+	margin-top:150px;
+}
+.apple img{
+    margin-right:20px;
+	margin-top:18px;
+	border:0px;
+}
+.googleplay img{
+    margin-left:40px;
+	border:0px;
+}
+.downcontent p{
+    margin-top: 0px;
+    margin-bottom:0px;
+    padding: 0px;
+    color:#757575 ;
+	font-size:50px;
+}
+.downparallex{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:space-between;
+}
+.store{
+    margin-top:50px;
+	display:flex;
+	justify-content:space-around;
+}
+.front{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:space-between;
+}
+
+.signin{
+    margin-top:100px;
+	display:flex;
+	justify-content:space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+

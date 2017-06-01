@@ -1,0 +1,24 @@
+
+<div class = "container">
+	
+	<br>
+
+	<%= form_for @post , url: 'create_post_remote', html: { multipart: true } , remote: true do |f| %>
+	<%= f.text_field :content , placeholder: "New Post" , id: "text_field" , required: true %>
+	<br>
+	<%= f.file_field :image  , accept: 'image/png,image/gif,image/jpeg' , id: "file_field" %>
+	<br>
+	<%= submit_tag 'Post' %>
+	<% end %>
+	</div>
+	<br>
+	
+	<div class = "posts" id="posts">
+		<% @posts.each do |post| %>
+	<%= render 'post' , :post => post %>
+	<div id="comment<%= post.id %>">
+	</div>
+	<% end %>
+	</div>
+
+
